@@ -26,10 +26,10 @@ The script creates two bar plots, one for median prices by region for properties
 It then repeats the same process for the 'Furnished' column.
 Contributors
 
-This script was created by a single person
+This script was created by Meba Tesfaye
 Timeline
 
-The script was created on January 2023
+The script was created on January 17 2023
 Personal situation
 
 This script was created as a part of an exercise and is not intended for commercial use.
