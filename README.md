@@ -27,6 +27,8 @@ For the data analysis project:
 For the data modeling project: 
     Update the list of columns to drop in the "columns_to_drop" variable if necessary.
     Update the list of features used in the "X" variable if necessary.
+    
+   
     Run the code and the accuracy of the model will be printed out.
     You can use the "predict" function to make predictions on new data.
     You can also adjust the parameters of the model such as the number of estimators and maximum depth to optimize the performance of the model.
@@ -34,6 +36,8 @@ For the data modeling project:
 
 
 Visuals
+
+
 For the Data analaysis project i made two graphs:
 <table>
   <tr>
@@ -47,6 +51,14 @@ For the Data analaysis project i made two graphs:
     </td>
   </tr>
  </table>
+ 
+ 
+ Model evaluation 
+ 1. To improve the result, try different feature selection methods, or try different models or tuning their hyperparameters.
+ 2. The feature selection step has the most impact on the results, as the chosen features will determine the model's ability to accurately predict the target variable.
+ 3. You should divide their time working on this project by first understanding the problem and the data, then feature selection, model selection and tuning, evaluating the model, and finally, interpreting and communicating the results.
+ 
+ 
 Contributors
 
 This script was created by Meba Tesfaye
