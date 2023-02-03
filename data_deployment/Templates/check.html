@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-image: url(https://www.pexels.com/photo/person-with-keys-for-real-estate-7599735/.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+
+        .output {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #eee;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Property Information</h1>
+    <form method = "post">
+        <label>Living Area:</label>
+        <input type="text" id="Living Area">
+
+        <label>Terrace:</label>
+        <select id="Terrace">
+            <option value="True">True</option>
+            <option value="False">False</option>
+        </select>
+
+        <label>Number of rooms:</label>
+        <input type="text" id="Number of rooms">
+
+
+        <label>Garden:</label>
+        <select id="Garden">
+            <option value="True">True</option>
+            <option value="False">False</option>
+
+        <input type="submit" value="Submit" onclick="displayValues()">
+    </form>
+
+    <div class="output" id="output">
+        <!-- Output values will be displayed here -->
+    </div>
+    <script>
+        function displayValues() {
+            const LivingArea = document.getElementById("Living Area").value;
+            const Terrace = document.getElementById("Terrace").value;
+            const Rooms = document.getElementById("Number of rooms").value;
+            const Garden = document.getElementById("Garden").value;
+            document.getElementById("result").innerHTML = "Living Area: " + LivingArea + "<br>" + 
+                                                        "Terrace: " + Terrace + "<br>" + 
+                                                        "Number of rooms: " + Rooms + "<br>" + 
+                                                        "Garden: " + Garden;
+        }
+</script>
+<div>
+  <label for="Living Area">Living Area:</label>
+  <input type="text" id="Living Area">
+  <br><br>
+  <label for="Terrace">Terrace:</label>
+  <input type="text" id="Terrace">
+  <br><br>
+  <label for="Number of rooms">Number of rooms:</label>
+  <input type="text" id="Number of rooms">
+  <br><br>
+  <label for="Garden">Garden:</label>
+  <input type="text" id="Garden">
+  <br><br>
+  <button onclick="displayValues()">Display values</button>
+  <br><br>
+  <div id="result"></div>
+</div>
+</html>
+            
